@@ -127,3 +127,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #User model authenticationpurposes.
 AUTH_USER_MODEL = 'microblogs.User'
+
+POST_MODEL = 'microblogs.Post'
