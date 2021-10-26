@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import User, Post
+from microblogs.models import User, Post
 from django.core.exceptions import ValidationError
 
 # Create your tests here.
