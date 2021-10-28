@@ -92,7 +92,6 @@ class UserModelTestCase(TestCase):
         self.user.email= ""
         self._assert_user_is_invalid()
 
-
 class PostTestCase(TestCase):
 
     def create_author(self):
