@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>Clucker</title>
+</head>
+  <body>
+    <h1>Showing user items</h1>
+      <p><b> User info is: </b>:
+        {% for item in list %}
+        <li> {{item}} </li>
+        {% endfor %}
+      </p>
+    {{show_user_info}}
+  </body>
+</html>

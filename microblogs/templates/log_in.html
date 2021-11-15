@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Clucker</title>
+</head>
+  <body>
+    <h1>Log in</h1>
+    {% for message in messages %}
+    <p><b>{{ message }}</b></p>
+    {% endfor %}
+    <form action="{% url 'log_in' %}" method="post">  <!-- form leads back to log in url-->
+      {% csrf_token %}
+      {{ form.as_p }} <!-- Display form as 'p': a different field on each line -->
+      <input type="submit" value="Log in">   <!-- make submit button that says 'log in'-->
+    </form>
+  </body>
+</html>
